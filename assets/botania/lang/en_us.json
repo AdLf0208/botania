@@ -1,0 +1,6 @@
+{
+  "block.botania.endoflame": "Endoflame",
+  "block.botania.mana_pool": "Mana Pool",
+  "block.botania.mana_spreader": "Mana Spreader",
+  "botania.mana_pool.readout": "Mana Pool: %s/%s mana"
+}

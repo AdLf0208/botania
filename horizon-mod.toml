@@ -1,0 +1,29 @@
+# Botania for Horizon — slice 1: the mana loop, one flat SDK package.
+#
+# Migrated 2026-11-18 from the retired `.hnmod` container (Horizon's mod-API merge
+# #16941; the registry closed submission #913 with the format purge). The manifest
+# below is the only one: identity, the content capability and the exact native pins.
+# `assets/` and `data/` are the carried content (endoflame, mana spreader, mana
+# pool), `src/` is the port's code.
+#
+# Licence: the Botania License (rank 1, copyleft-style). The complete licence text
+# is `LICENSE`; `LICENSE-NOTICE.md` names Vazkii, the jar's nine authors, the
+# alteration, the copyleft and non-monetary clauses, and states that no Botania API
+# code was used. Local-only until the maintainer approves publishing.
+id = "botania"
+name = "Botania"
+version = "0.2.0"
+description = """One complete mana loop with the jar's own numbers: an endoflame burns a dropped fuel item into 300 mana, hands it to the nearest mana spreader within six blocks, which fires a 160-mana burst along the axis it was placed facing, and a mana pool stores up to 1,000,000 mana."""
+authors = ["Vazkii", "wiiv", "williewillus", "dylan4ever", "Hubry", "Alwinfy", "artemisSystem", "Falkory220", "Wormbo", "AdLf0208"]
+# The content API: exact and checked. This package ships carried content beside its
+# code, so the capability is a real claim, not only the schema's fixed value.
+api = "0.2"
+# The installation side, not the hook's: an integrated server belongs to the client
+# installation, so a LAN host or a single-player world needs both.
+side = "both"
+capabilities = ["registries"]
+
+[native]
+game = "26.3"
+horizon = "0b14f8acfd97fa2c750e42795249dcc981178ca4"
+mixins = "e59da9094f0c2fdda6c627fe9eff22dec6a906f0"

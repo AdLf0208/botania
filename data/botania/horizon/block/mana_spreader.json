@@ -1,0 +1,34 @@
+{
+  "collision_shapes": {
+    "default": [
+      [
+        0.125,
+        0.125,
+        0.125,
+        0.875,
+        0.875,
+        0.875
+      ]
+    ]
+  },
+  "properties": {
+    "explosion_resistance": 2.0,
+    "hardness": 2.0,
+    "occludes": false,
+    "requires_tool": false,
+    "sounds": "minecraft:oak_planks"
+  },
+  "shapes": {
+    "default": [
+      [
+        0.125,
+        0.125,
+        0.125,
+        0.875,
+        0.875,
+        0.875
+      ]
+    ]
+  },
+  "template": "minecraft:stone"
+}
